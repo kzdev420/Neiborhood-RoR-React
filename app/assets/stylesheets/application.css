@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container {
+    /*background: url('../assets/img/bracelets-collaboration-colleagues-398532.jpg') center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/bracelets-collaboration-colleagues-398532.jpg');
+    /*background-image: url('../assets/images/Bright-Blue.jpg');*/
+    background-position: center;
+}
+
+.overlay {
+    /*background-color: rgba(128,128,128, 0.5)
+    background: -webkit-linear-gradient(225deg, rgba(140, 158, 255,0.8), rgba(236,154,151,0.7) 100%);*/
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#main-header-container {
+    padding: 15px;
+    min-height: 220px;
+    /*background-image: url('../assets/images/bracelets-collaboration-colleagues-398532.jpg');
+    background-image: url('../assets/images/Bright-Blue.jpg');*/
+    background-image: url('../assets/website-backgrounds-E280AB1E280AC-E280ABE280AC.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#login-form-container {
+    padding: 15px;
+}
+
+.login-error-message {
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #f44336;
+    display: none;
+}
+
+@media screen and (max-width: 599px){
+    #main-header-container {
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    #log-in-form-header {
+        display: none;
+    }
+
+    #log-in-form-subheader {
+        display: none;
+    }
+
+    #login-form-container{
+        padding-top: 0px;
+    }
+
+    #main-header-container {
+        padding-bottom: 0px;
+    }
+}
+
+#sign-up-form-paper {
+    padding: 15px;
+}
+
+#fab-add-button {
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 599px) {
+    #map-footer {
+        height: 70px;
+    }
+}
+
+#user-menu {
+    position: absolute;
+    right: 24px;
+}
+
+a .link{
+    color: #536dfe; 
+}
+
+@media screen and (max-width: 599px) {
+    #user-menu {
+        right: 16px
+    }
+}
